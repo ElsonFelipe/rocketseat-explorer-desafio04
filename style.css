@@ -15,7 +15,6 @@ body {
 }
 
 header {
-  height: 7.2rem;
   display: flex;
   width: 43rem;
   height: 7.2rem;
@@ -95,18 +94,63 @@ aside {
   margin: 2.2rem 3.1rem;
 }
 
-.articles-wrapper {
+ul {
+  list-style: none;
+
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
 }
 
-figure {
-  display: grid;
-  grid-template-areas: "img h3"
-  "img p";
+li {
+  display: flex;
+  gap: 1.6rem;
+}
 
-  grid-template-rows: 50px 30px 30px;
-  grid-template-columns: 15.1rem 1fr;
+li img {
+  width: 15.1rem;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+li > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+li h3 {
+  color:#202024;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+li p {
+  color: #121214;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+footer {
+  display: flex;
+  width: 43rem;
+  height: 6.2rem;
+  padding: 1.6rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2.55rem;
+
+  background: #065E7C;
+}
+
+footer p {
+  color: #FFF;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
 }
 
