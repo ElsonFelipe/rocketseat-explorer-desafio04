@@ -102,14 +102,17 @@ ul {
 }
 
 li {
+  height: 84px;
   display: flex;
+  align-items: center;
   gap: 1.6rem;
 }
 
 li img {
-  width: 15.1rem;
+  width: 15rem;
+  height: 84px;
   aspect-ratio: 16/9;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 5px;
 }
 
